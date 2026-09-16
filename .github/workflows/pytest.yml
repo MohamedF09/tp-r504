@@ -12,6 +12,9 @@ jobs:
       - name: Set up Python for Demo
         uses: actions/setup-python@v4
 
+      - name: Install pytest
+        run: python3 -m pip install pytest
+
       - name: Run tests
-        run: cd TP1 && pytest test.py
+        run: cd TP1 && python3 -m pytest test.py
 
