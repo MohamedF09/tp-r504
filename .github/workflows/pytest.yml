@@ -1,4 +1,4 @@
-name: Tests unitaires
+name: tests unitaires
 
 on: [push]
 
@@ -22,10 +22,10 @@ jobs:
         run: python -m pip install pytest
 
       - name: Display branch
-        run: echo "Nom branche: ${{ github.ref }}"
+        run: 'echo "Nom branche: ${{ github.ref }}"'
 
       - name: Display OS
-        run: echo "OS: ${{ runner.os }}"
+        run: 'echo "OS: ${{ runner.os }}"'
 
       - name: Display Python version
         run: python --version
