@@ -1,4 +1,4 @@
-name: tests unitaires
+name: Tests unitaires
 
 on: [push]
 
