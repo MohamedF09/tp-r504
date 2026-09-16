@@ -15,6 +15,12 @@ jobs:
       - name: Install pytest
         run: python3 -m pip install pytest
 
+      - name: Display branch
+        run: echo "Nom branche: ${{ github.ref }}"
+
+      - name: Display OS
+        run: echo "OS: ${{ runner.os }}"
+
       - name: Run tests
         run: cd TP1 && python3 -m pytest test.py
 
