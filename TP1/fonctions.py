@@ -8,6 +8,10 @@ def puissance(a, b):
     if a == 0 and b < 0:
         raise Exception("0 cannot be raised to a negative power")
 
+
+    if a == 0 and b == 0:
+        raise Exception("0 ** 0 is undefined")
+
     resultat = 1
 
     if b >= 0:
@@ -19,3 +23,4 @@ def puissance(a, b):
         resultat = 1 / resultat
 
     return resultat
+
