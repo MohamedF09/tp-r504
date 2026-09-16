@@ -1,8 +1,13 @@
-
 def puissance(a, b):
-	if not type(a) is int:
-		raise typeError("only integers are allowed pour a")
-	if not type(b) is int:
-		raise typeError("only integers are allowed pour b")
-	return a ** b
+    if type(a) is not int:
+        raise TypeError("Only integers are allowed")
+
+    if type(b) is not int:
+        raise TypeError("Only integers are allowed")
+
+    if a == 0 and b < 0:
+        raise Exception("0 cannot be raised to a negative power")
+
+    return a ** b
+
  
