@@ -1,5 +1,5 @@
 import fonctions as f 
-a = float(input("premier nombre :" ))
-b = float(input("deuxieme nombre :" ))
+a = int(input("premier nombre :" ))
+b = int(input("deuxieme nombre :" ))
 res = f.puissance(a,b)
 print("le resulat est : ",res)
